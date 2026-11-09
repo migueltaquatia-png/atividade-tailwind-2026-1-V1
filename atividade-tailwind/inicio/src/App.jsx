@@ -1,14 +1,14 @@
-import Header from './components/Header.jsx'
-import Hero from './components/Hero.jsx'
-import Cardapio from './components/Cardapio.jsx'
-import Sobre from './components/Sobre.jsx'
-import Contato from './components/Contato.jsx'
-import Footer from './components/Footer.jsx'
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Cardapio from './components/Cardapio';
+import Sobre from './components/Sobre';
+import Contato from './components/Contato';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    // EXERCÍCIO 1: estilize esta div (ela faz o papel do <body>)
-    <div>
+    // Exercício 1: Altura mínima, cores de fundo/texto, fonte sans e antialiased
+    <div className="min-h-screen bg-stone-50 text-stone-800 font-sans antialiased">
       <Header />
       <main>
         <Hero />
@@ -18,5 +18,5 @@ export default function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

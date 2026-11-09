@@ -1,34 +1,34 @@
-const numeros = [
-  { valor: '15', legenda: 'anos de história' },
-  { valor: '12', legenda: 'produtores parceiros' },
-  { valor: '+50 mil', legenda: 'xícaras por ano' },
-]
-
-// EXERCÍCIO 5: sobre nós
 export default function Sobre() {
   return (
-    <section id="sobre">
-      <div>
-        <img src="https://picsum.photos/seed/coffeeshop/800/600" alt="Interior da cafeteria" />
-        <div>
-          <h2>Nossa história</h2>
-          <p>
-            Tudo começou com uma pequena máquina de espresso e o sonho de servir
-            o melhor café do bairro.
+    <section id="sobre" className="bg-stone-900 text-stone-100">
+      <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-10">
+        <img
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=800"
+          alt="Nossa cafeteria"
+          className="w-full md:w-1/2 rounded-2xl shadow-2xl"
+        />
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold text-amber-400">Sobre o Café Dev</h2>
+          <p className="mt-4 leading-relaxed text-stone-300">
+            Nascemos da paixão por código limpo e café forte. Acreditamos que uma boa xícara de café pode transformar um bug misterioso em uma solução elegante.
           </p>
-          <p>
-            Hoje trabalhamos diretamente com produtores do sul de Minas,
-            garantindo qualidade e um preço justo para quem planta.
-          </p>
-          <ul>
-            {numeros.map((item) => (
-              <li key={item.legenda}>
-                <strong>{item.valor}</strong> <span>{item.legenda}</span>
-              </li>
-            ))}
+          
+          <ul className="mt-8 grid grid-cols-3 gap-4 text-center">
+            <li>
+              <strong className="block text-3xl font-extrabold text-amber-400">10k+</strong>
+              <span className="text-sm text-stone-400">Xícaras servidas</span>
+            </li>
+            <li>
+              <strong className="block text-3xl font-extrabold text-amber-400">100%</strong>
+              <span className="text-sm text-stone-400">Grãos arábica</span>
+            </li>
+            <li>
+              <strong className="block text-3xl font-extrabold text-amber-400">4.9 ★</strong>
+              <span className="text-sm text-stone-400">Avaliação média</span>
+            </li>
           </ul>
         </div>
       </div>
     </section>
-  )
+  );
 }
