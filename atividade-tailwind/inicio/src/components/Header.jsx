@@ -7,10 +7,12 @@ export default function Header() {
   ];
 
   return (
-    // Exercício 2: Header fixo no topo, fundo branco, sombra leve e z-index 10
+    // EXERCÍCIO 2: Barra de navegação
     <header className="sticky top-0 bg-white shadow-sm z-10">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <span className="text-2xl font-bold text-amber-700">Café Dev</span>
+        <a href="#inicio" className="text-2xl font-bold text-amber-700">
+          Grão Dourado
+        </a>
         
         <ul className="hidden md:flex gap-6">
           {links.map((link) => (

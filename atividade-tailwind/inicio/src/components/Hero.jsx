@@ -1,4 +1,3 @@
-// EXERCÍCIO 3: seção hero
 export default function Hero() {
   return (
     <section

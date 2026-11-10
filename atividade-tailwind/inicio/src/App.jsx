@@ -4,6 +4,8 @@ import Cardapio from './components/Cardapio';
 import Sobre from './components/Sobre';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
+import CardProduto from './components/CardProduto';
+CardProduto
 
 export default function App() {
   return (
@@ -15,8 +17,10 @@ export default function App() {
         <Cardapio />
         <Sobre />
         <Contato />
+        <CardProduto />
       </main>
       <Footer />
     </div>
   );
 }
+
